@@ -1,0 +1,202 @@
+/***** BASE STYLES *****/
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #2b2b2b;
+}
+#about #work #contact {
+	height: 600px;
+}
+	
+/***** GRID *****/
+.full-width {
+	width: 1200px;
+	margin: 0 auto;
+}
+.half-width {
+	width: 600px;
+	float: left;
+}
+.third-width {
+	width: 400px;
+	float:left;
+}
+/***** END Base Styles *****/
+
+/***** HEADER *****/
+header {
+	height: 800px;
+	background: url('../img/hero.png') no-repeat, url('../img/hero-tile.png') repeat; /*The directions were just wrong. I had to replace the background: cover with this extra tile image.  1. background:cover is invalid as per validator tool and 2. When I used background-size:cover(the correct way use cover), it clipped the image height because it restrains proportions.   This hero-tile.png image set to repeat shows up behind the hero.png and stretches with the browser window. It is suttle, but there is a texture here, so using just a background color does not work since colors have no texture.*/
+}
+
+img#logo-kelly {
+    width: 100px;
+    height: auto;
+	padding-left: 30px;
+	padding-top: 5px;
+	float: left;
+}
+
+
+header h1 {
+	padding-left: 10px;
+	font-family: 'Lora', serif;
+	font-size: 30px; 
+	color: #d3afb1; 
+	float: left;
+}
+
+nav {
+	float: right;
+}
+
+nav ul li {
+	display: inline-block; /*This also removed the bullets. Inline-block allows padding here just inline would not.*/
+}
+
+nav ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 18px;
+	color: #828282;
+	padding-left: 80px;
+}
+
+header h2 {
+	width: 1150px;
+	clear: both;
+	font-family: 'Lora', serif;
+	font-size: 72px;
+	line-height: 80px;
+	color: #9b9b9b;
+	padding: 20px 0 20px 25px;
+}
+
+header h2 span {
+	color: black;
+}
+/***** END Header Styles *****/
+
+/***** ABOUT STYLES *****/
+#about .full-width { /*Gives .full-width some specific styling for the #about section only. Both an ID selector and a class selector on the same line, with no commas or anything in between is called a combination. */
+	padding: 80px 0;
+}
+#about h2 { /*Targets ONLY the h2 that is inside the #about ID Div*/ 
+    font-family: 'Lora', serif;
+    font-size:36px;
+    padding-left:50px;
+} 
+#about p { /*Targets ONLY the P that is inside the #about ID Div*/ 
+    font-size: 21px;
+    color:#7f7f7f;
+    line-height: 40px;
+    padding-left:50px;
+    padding-right:50px;
+	padding-bottom: 80px;
+}
+/***** END About Styles *****/
+
+
+/***** WORK STYLES *****/
+
+#work {
+	overflow: auto; /*There were no instructions for this but I knew to add to get this to work.  This fixes the box collapse that happens when the floated item is taller than the parent dive it is floated in.*/
+	clear: both;  /*There were no instructions for this but I knew to add to get this to work.  This forces the box to break down to the next line.*/
+	background-color: #f7d1c7;
+	text-align: center;
+}
+#work .full-width {
+	padding: 0;
+	overflow: auto;
+}
+
+#work nav {
+	float: right;
+}
+
+#work .third-width {
+		float: left;
+}
+
+
+#work img {
+	padding-bottom: 30px;
+}
+#work h3 {
+	font-size: 24px;
+	line-height: 32px ;
+	width: 180px;
+	margin: 0 auto;
+}
+#work p {
+	font-family: 'Lora', serif;
+	font-size: 18px;
+	line-height: 30px; 
+	padding: 0 30px 50px; /*Directions said 50px but the font did not flow correctly to match the design. Widows and orphans is a no-no, so I adjusted down to 30px on the padding. Though the design still has an orphan on the right column. At least this now matches the design with the 30px adjustment.  I also added 50px padding to the bottom, but the directions left this out.*/
+}
+/***** END Work Styles *****/
+
+/***** CONTACT STYLES *****/
+#contact {
+	background-color: #ebebeb;
+}
+
+#contact .full-width {
+	padding: 110px 0;
+	overflow: auto;
+}
+
+#contact img#contact-img {/*Finds the img with the ID of 'contact-img' which is inside the footer DIV that has an ID of 'contact' applied to it*/
+	margin-left: 25px;
+	border: 12px solid #ffffff;	
+}
+
+#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul /*remember the , acts like AND */ {
+	padding-left: 115px;
+	/* overflow: auto; AGAIN, this was not in the instructions, but with troubleshooting I was able to figure this out. Block elements that are taller than the containing dive need this overflow:auto to prevent its container from collapsing. Turning on a temp border is a great way to help with troubleshooting.*/
+}
+
+#contact img#envelope {
+	padding: 0 10px 0 115px;
+}
+
+#contact h2 {
+	font-family: 'Lora', serif;
+	font-size: 36px;
+	line-height: 44px;
+}
+
+#contact #email-header{
+    font-size: 32px;
+    font-weight: lighter;
+    line-height:44px;
+    margin: -30px 0 5px 0;
+}
+
+#contact #socialmedia-header {
+	font-weight: bold;
+	font-size: 29px;
+	line-height: 44px;
+	margin: 40px 0 0 0;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #c49075;
+    font-weight: bold;
+    font-size: 28px
+}
+
+#contact ul {
+	list-style: none; /* Removes Bullets */
+}
+
+#contact ul li /* targets the li inside the ul inside #contact */ {
+	display: inline-block;	
+}
+
+#contact ul img {
+	font-size: 32px;
+	padding-right: 48px;
+}
+	
+/***** END Contact Styles *****/

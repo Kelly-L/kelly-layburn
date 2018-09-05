@@ -1,0 +1,138 @@
+/***** BASE STYLES *****/
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #000000;
+	font-size: 16px;
+}
+ 
+/* 
+* {  Universal Border for Troubleshooting
+  border: 1px solid red;
+}
+*/
+
+a {
+	color: #77a466;
+}
+
+
+/***** GRID *****/
+
+.full-width {
+	width: 1200px;
+	margin: 0 auto;
+}
+.two-third-width {
+	width: 800px;
+	float:left;
+}
+.half-width {
+	width: 600px;
+	float: left;
+}
+.third-width {
+	width: 380px;
+	float:left;
+}
+
+
+/***** HEADER STYLES *****/
+
+header {
+	text-transform: uppercase;
+} 
+header h1 span {
+	color: #77a466;	
+}
+
+
+nav {
+	float: right;
+	padding: 20px 0px;
+}
+
+nav ul li {
+	display: inline-block; /*Removes the bullets as well as putting each link on one line of text side by side. Inline-block allows padding.Inline would not.*/
+}
+
+nav ul li a {
+	font-size: 14px;
+	line-height: 23px;
+	text-decoration: none;
+	font-weight: bold;
+	padding-left: 25px;
+}
+
+/***** TOP-SECTION STYLES *****/
+
+#top-section #hero-image {
+	border: solid 3px #77a466;
+	border-left: none;
+	border-right: none;
+}
+
+#top-section h2 {
+	color: #77a466;
+}
+
+#top-section p {
+	line-height: 25px;
+}
+
+
+
+/***** BOTTOM-SECTION STYLES *****/
+
+#bottom-section .full-width {
+	border-top: solid 2px #dedbdc; 
+	border-bottom: solid 2px #dedbdc;
+	height:200px;
+}
+
+
+#bottom-section .third-width>h3 {
+	font-size: 12px;
+	line-height: 25pt;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#recipes a {
+	line-height: 30px;
+	text-decoration: none;
+}
+
+#reviews p {
+	line-height: 21px;
+}
+
+#contact p {
+	line-height: 24px;
+}
+
+.third-width#reviews, .third-width#contact {
+	padding-left: 25px;
+	border-left: solid 2px #dedbdc;	
+	height: 200px;
+}
+
+
+
+/***** FOOTER STYLES *****/
+
+footer {
+	clear: both;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+footer .full-width span {
+	font: 30px 'Mr Dafoe', cursive;
+	color: #77a466;
+	text-transform: lowercase;
+	
+}

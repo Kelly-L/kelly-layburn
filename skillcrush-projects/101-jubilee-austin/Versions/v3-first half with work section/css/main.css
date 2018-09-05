@@ -1,0 +1,77 @@
+/***** BASE STYLES *****/
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #2b2b2b;
+}
+#about #work #contact {
+	height: 600px;
+}
+	
+/***** GRID *****/
+.full-width {
+	width: 1200px;
+	margin: 0 auto;
+}
+.half-width {
+	width: 600px;
+	float: left;
+}
+.third-width {
+	width: 400px;
+	float:left;
+}
+/***** END Base Styles *****/
+
+/***** ABOUT STYLES *****/
+#about .full-width { /*Gives .full-width some specific styling for the #about section only. Both an ID selector and a class selector on the same line, with no commas or anything in between is called a combination. */
+	padding: 80px 0;
+}
+#about h2 { /*Targets ONLY the h2 that is inside the #about ID Div*/ 
+    font-family: 'Lora', serif;
+    font-size:36px;
+    padding-left:50px;
+} 
+#about p { /*Targets ONLY the P that is inside the #about ID Div*/ 
+    font-size: 21px;
+    color:#7f7f7f;
+    line-height: 40px;
+    padding-left:50px;
+    padding-right:50px;
+}
+/***** END About Styles *****/
+
+
+/***** WORK STYLES *****/
+#work {
+	overflow: auto; /*There were no instructions for this but I knew to add to get this to work.  This fixes the box collapse that happens when the floated item is taller than the parent dive it is floated in.*/
+	clear: both;  /*There were no instructions for this but I knew to add to get this to work.  This forces the box to break down to the next line.*/
+	background-color: #f9ceb7;
+	text-align: center;
+}
+#work .full-width {
+	padding: 115px 0;
+}
+#work img {
+	padding-bottom: 30px;
+}
+#work h3 {
+	font-size: 24px;
+	line-height: 32px ;
+	width: 180px;
+	margin: 0 auto;
+}
+#work p {
+	font-family: 'Lora', serif;
+	font-size: 18px;
+	line-height: 30px; 
+	padding: 0 30px 50px; /*Directions said 50px but the font did not flow correctly to match the design. Widows and orphans is a no-no, so I adjusted down to 30px on the padding. Though the design still has an orphan on the right column. At least this now matches the design with the 30px adjustment.  I also added 50px padding to the bottom, but the directions left this out.*/
+}
+/***** END Work Styles *****/
+
+
+/**This may not be required yet, so I commented it out. 
+Think of the COMMA as an AND, so All h1 h2 and h3 tags get this style. .
+h1, h2, h3 {
+	font-family: 'Lora', serif;
+}
+**/
